@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Interactivo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS2M5YTLVP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PS2M5YTLVP');
+  </script>
+
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 2em auto;
+    color: #ccc;
+  }
+
+  iframe {
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+    margin-bottom: 40px;
+  }
+
+form {
+  margin: 0 auto;
+  background: #fff; /* fondo blanco */
+  color: #000;       /* texto negro */
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+form p {
+  color: #000; /* aseguramos que el texto del párrafo sea negro */
+}
+
+input[type="email"] {
+  width: 80%;
+  padding: 12px;
+  font-size: 1em;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+}
+
+input[type="submit"] {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #005ea1;
+}
+
+
+  @media (max-width: 768px) {
+    iframe {
+      height: 60vh;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<h1>Bienvenido a mi dashboard interactivo</h1>
+
+<p>Explora los datos de forma dinámica y visual en Power BI.</p>
+
+<iframe 
+  title="Dashboard Intereses" 
+  src="https://app.powerbi.com/view?r=eyJrIjoiNzFmZDg3ZWUtYWIwNy00NDYxLWJiMzMtYzJjM2RjNDRhNWE0IiwidCI6ImIxNTViZjc0LTdlOTMtNGE4Ni1hOGQxLWYxY2M5ODU1Y2Y3NSIsImMiOjJ9" 
+  allowFullScreen="true">
+</iframe>
+
+<form 
+  action="https://formspree.io/f/xrbkzqwd" 
+  method="POST">
+  <p>¿Quieres saber cómo lo construí? Deja tu mail y te cuento en detalle 👇</p>
+  <input type="email" name="email" placeholder="tuemail@ejemplo.com" required />
+  <input type="submit" value="Quiero saber más" />
+</form>
+
+</body>
+</html>
